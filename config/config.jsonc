@@ -17,7 +17,7 @@
 // REVIEW THE APBS LOGS TO TUNE YOUR CONFIG. (\user\mods\acidphantasm-progressivebotsystem\logs)
         "enableModdedWeapons": false,
         "enableModdedEquipment": false,
-        "enableModdedClothing": false,
+        "enableModdedClothing": true,
         "initalTierAppearance": 3,
         "pmcWeaponWeights": 10,
         "scavWeaponWeights": 1,
@@ -71,7 +71,7 @@
 
 // Force weapon stocks
 // If set to true, will enforce all AI weapons to have stocks, if false - will use APBS values
-        "forceStock": false,
+        "forceStock": true,
 
 // Force weapon dust covers
 // If set to true, will enforce all AI weapons to have dust covers, if false - will use APBS values
@@ -91,18 +91,18 @@
 // Enable/disable AI having T-7 thermal goggles
 // If set to true, will allow AI to spawn with T-7 thermal goggles, if false they will not.
 // "startTier" controls what tier the goggles will be available in. "5c110624d174af029e69734c"
-        "enableT7Thermals": false,
+        "enableT7Thermals": true,
         "startTier": 6,
 
 // Enable/Disable PMC/scav Loot
 // If set to true, will allow PMCs/scavs to have backpack/rig/pocket loot. If disabled, they will not.
-        "pmcLoot": false,
+        "pmcLoot": true,
         "scavLoot": true,
 
 // Enable/Disabe Scav specific tiering options
 // "enableScavAttachmentTiering" - If set to true, will allow scavs to get additional weapon/equipment attachments as they tier up. If disabled, they will always have tier 1 attachments.
 // "enableScavEqualChanceEquipmentTiering" - If set to true, will allow scavs to have equal chances for any equipment in their pools. If disabled, they will use APBS defaults (low chances for good gear).
-        "enableScavAttachmentTiering": false,
+        "enableScavAttachmentTiering": true,
         "enableScavEqualEquipmentTiering": false,
 
 // Enable/Disable adding keys to Scav Backpack loot
@@ -121,7 +121,7 @@
 // Ex ctd: Whatever value is picked between 50% & 90% will be the "max" durability of the weapon ("max" is the limit you can repair the weapon to)
 // Ex ctd: After the max durability is selected, it will roll for the actual current durability which will be between 0-25% lower than the max.
 // Ex ctd: Weapons are safeguarded to never fall below 40%.
-        "scavWeaponDurability": [ 50, 90, 0, 20 ],
+        "scavWeaponDurability": [ 60, 90, 0, 20 ],
         "pmcWeaponDurability": [ 95, 100, 0, 5 ],
         "bossWeaponDurability": [ 80, 100, 0, 20 ],
         "guardWeaponDurability": [ 80, 100, 0, 20 ],
@@ -210,14 +210,14 @@
 // "enableCustomLevelDeltas" if true will use the values you set below, otherwise they will use APBS values
 // THE BELOW VALUES BY DEFAULT ARE APBS DEFAULTS
 // IF YOU WANT EVERY TIER AT EVERY LEVEL, SET ALL OF THESE TO: [ 79, 79 ]
-        "enableCustomLevelDeltas": false,
-        "tier1LevelDelta": [ 10, 5 ],
-        "tier2LevelDelta": [ 15, 7 ],
-        "tier3LevelDelta": [ 25, 10 ],
-        "tier4LevelDelta": [ 35, 15 ],
-        "tier5LevelDelta": [ 45, 15 ],
-        "tier6LevelDelta": [ 55, 20 ],
-        "tier7LevelDelta": [ 60, 20 ],
+        "enableCustomLevelDeltas": true,
+        "tier1LevelDelta": [ 5, 5 ],
+        "tier2LevelDelta": [ 7, 7 ],
+        "tier3LevelDelta": [ 10, 10 ],
+        "tier4LevelDelta": [ 15, 15 ],
+        "tier5LevelDelta": [ 20, 15 ],
+        "tier6LevelDelta": [ 25, 20 ],
+        "tier7LevelDelta": [ 30, 20 ],
 
 // LevelDelta's are the lowest and highest levels that AI can spawn relative to the player's level. 
 // Examples: 
